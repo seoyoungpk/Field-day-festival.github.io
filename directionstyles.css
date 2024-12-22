@@ -1,0 +1,798 @@
+body {
+    background-color: #f9f9f9;
+    font-family: "Loos Normal", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    box-sizing: border-box;
+}
+#mobile-menu {
+    display: none; 
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mobile-menu.open {
+    display: flex; /* .open 클래스가 있을 때만 표시 */
+}
+
+#mobile-menu ul {
+    padding: 40% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#mobile-menu ul li {
+    padding: 5% 0;
+    box-sizing: border-box;
+}
+
+
+#mobile-menu ul li a {
+    gap: 10px;
+    font-size: 7vw;
+}
+
+.sns a {
+    margin: 0 10px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-icon img{
+
+    width: 20px; /* 크기 설정 */
+    height: 20px; /* 크기 설정 */
+}
+
+
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 3vw 3vw 0; 
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: #f9f9f9;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+nav {
+    position: absolute;
+    left: 50%; /* 수평 중심 기준 */
+    transform: translateX(-50%); /* 정확히 중앙 정렬 */
+    padding: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 50px; /* 항목 간 간격을 조정 */
+}
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+
+.ticketbutton {
+    margin-left: auto; /* 오른쪽 끝으로 이동 */
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.6s;
+}
+
+nav li a:hover {
+    color: #78E86E;
+}
+
+.ticketbutton:hover {
+    background-color: #78E86E;
+}
+
+.mobile-icon {
+    display: none;
+    position: fixed;
+    right: 2vh;  
+    top: 6.5vh;   
+    z-index: 20;
+}
+
+.mobile-icon img {
+    width: 4vh;   /* 기본 크기 */
+    height: 4vh;  /* 기본 크기 */
+    cursor: pointer;
+}
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+      
+    .section1 {
+        margin-top: 13vh;
+        display: flex;
+        width: 100%;
+        padding: 7%;
+        box-sizing: border-box;
+        justify-content: center;
+        font-size: 22px; 
+      }
+
+
+
+
+      .section2 {
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        gap: 0 0 0 30px; 
+        box-sizing: border-box;
+    }
+
+
+    .left {
+      height: 100vh;         
+      width: 50%;        
+      box-sizing: border-box;  
+      
+    }
+
+    .map {
+        position: relative;
+        width: 80vh;
+        height: 700px;
+
+    }
+
+
+  .map-bar, .map-food, .map-sobar, .map-charge, .map-every, .map-recycle, .map-misting, .map-toilet, .map-fast, .map-water, .map-vip, .map-accessible, .map-party, .map-medical, .map-ticket, .map-gs {
+      position: absolute; 
+      top: 0;
+      left: 0;
+      width: 80vh;
+      height: 700px;
+      z-index: 1; 
+  }
+
+
+    .right {
+      display: flex;
+      flex-direction: column; /* 세로로 나열 */
+      align-items: stretch;
+      width: 50%;
+      padding: 65px 0 0 100px;
+      box-sizing: border-box;
+  }
+
+
+  .icon {
+      display: flex;          /* 아이콘 가로 배치 */
+      justify-content: flex-start; /* 왼쪽 정렬 */
+      gap: 40px;              /* 아이콘 간 간격 */
+  }
+  
+  .icon div {
+      display: flex;          /* 아이콘 내부 세로 배치 */
+      flex-direction: column; /* 세로 정렬 */
+      align-items: center;    /* 가운데 정렬 */
+      text-align: center;     /* 텍스트 중앙 정렬 */
+  }
+
+  .right p {
+    margin-top: 3px;  /* 이미지와 텍스트 간 간격 조정 */
+    font-size: 9px;   /* 텍스트 크기 설정 */
+    color: black;      /* 텍스트 색상 설정 */
+}
+
+.right h1{
+  font-size: 15px;
+ }
+    
+ /* 아이콘 */
+  .bar-img, .food-img, .sobar-img, .toilet-img, .water-img, .charge-img, 
+  .misting-img, .every-img, .recycle-img, .accessible-img, .fast-img, .vip-img, .medical-img, .party-img, .ticket-img, .gs-img {
+      width: 55px;            /* 아이콘 너비 */
+      height: 55px;           /* 아이콘 높이 */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  .bar-img {background-image: url(images/icon-bar.svg);}
+  .food-img {background-image: url(images/icon-food.svg);}
+  .sobar-img {background-image: url(images/icon-sobar.svg);}
+  .toilet-img {background-image: url(images/icon-toilet.svg);}
+  .water-img {background-image: url(images/icon-water.svg);}
+  .charge-img {background-image: url(images/icon-charge.svg);}
+  .misting-img {background-image: url(images/icon-misting.svg);}
+  .every-img {background-image: url(images/icon-every.svg);}
+  .recycle-img {background-image: url(images/icon-recycle.svg);}
+  .accessible-img {background-image: url(images/icon-accessible.svg);}
+  .fast-img {background-image: url(images/icon-fast.svg);}
+  .vip-img {background-image: url(images/icon-vip.svg);}
+  .medical-img {background-image: url(images/icon-medical.svg);}
+  .party-img {background-image: url(images/icon-party.svg);}
+  .ticket-img {background-image: url(images/icon-ticket.svg);}
+  .gs-img {background-image: url(images/icon-gs.svg);}
+
+  
+ /* 아이콘 hover */
+ .bar-img:hover {
+    background-image: url(images/icon-bar-hover.svg);
+    cursor: pointer;
+    }
+  .food-img:hover {
+    background-image: url(images/icon-food-hover.svg);
+    cursor: pointer;
+    }
+  .sobar-img:hover {
+    background-image: url(images/icon-sobar-hover.svg);
+    cursor: pointer;
+    }
+  .toilet-img:hover {
+    background-image: url(images/icon-toilet-hover.svg);
+    cursor: pointer;
+    }
+  .water-img:hover {
+    background-image: url(images/icon-water-hover.svg);
+    cursor: pointer;
+    }
+  .charge-img:hover {
+    background-image: url(images/icon-charge-hover.svg);
+    cursor: pointer;
+    }
+  .misting-img:hover {
+    background-image: url(images/icon-misting-hover.svg);
+    cursor: pointer;
+    }
+  .every-img:hover {
+    background-image: url(images/icon-every-hover.svg);
+    cursor: pointer;
+    }
+  .recycle-img:hover {
+    background-image: url(images/icon-recycle-hover.svg);
+    cursor: pointer;
+    }
+  .accessible-img:hover {
+    background-image: url(images/icon-accessible-hover.svg);
+    cursor: pointer;
+    }
+  .fast-img:hover {
+    background-image: url(images/icon-fast-hover.svg);
+    cursor: pointer;
+    }
+  .vip-img:hover {
+    background-image: url(images/icon-vip-hover.svg);
+    cursor: pointer;
+    }
+  .medical-img:hover {
+    background-image: url(images/icon-medical-hover.svg);
+    cursor: pointer;
+    }
+  .party-img:hover {
+    background-image: url(images/icon-party-hover.svg);
+    cursor: pointer;
+    }
+  .ticket-img:hover {
+    background-image: url(images/icon-ticket-hover.svg);
+    cursor: pointer;
+    }
+  .gs-img:hover {
+    background-image: url(images/icon-gs-hover.svg);
+    cursor: pointer;
+    }
+  
+  .bar-img:hover + p, .food-img:hover + p, .sobar-img:hover + p, .toilet-img:hover + p, .water-img:hover + p, .charge-img:hover + p, .misting-img:hover + p, .every-img:hover + p, .recycle-img:hover + p, .accessible-img:hover + p, .fast-img:hover + p, .vip-img:hover + p, .medical-img:hover + p, .party-img:hover + p, .ticket-img:hover + p, .gs-img:hover + p {color: #78E86E;}    
+
+
+#scroll-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    opacity: 0; /* 기본 상태에서는 투명 */
+    visibility: hidden; /* 기본적으로 숨김 */
+    transform: scale(0.9); /* 기본적으로 축소 상태 */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* opacity와 transform 애니메이션 */
+    background-color: white;
+    border: solid 0.5px black;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+#scroll-button.show {
+    opacity: 1; /* 보일 때 */
+    visibility: visible; /* 보일 때 */
+    transform: scale(1); /* 원래 크기로 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* 애니메이션 */
+}
+
+#scroll-button.hide {
+    opacity: 0; /* 사라질 때 */
+    visibility: hidden; /* 숨겨질 때 */
+    transform: scale(0.9); /* 축소 상태 */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* 애니메이션 후 숨김 */
+}
+
+
+.reset-icon{
+    object-fit: contain; 
+    position: relative; 
+    top: 1px; 
+    left: 0.5px; 
+}
+
+#scroll-button:hover {
+    border-color: #78E86E; 
+}
+
+.reset:hover .reset-icon {
+    content: url('images/reload-hover.svg'); 
+}
+
+
+
+.section3 {
+    width: 80%;
+    height: 100%;
+    padding: 0 0 20vh 0;
+    margin: 0 auto;
+}
+
+.item {
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.accordion-btn {
+    font-family: "Loos Normal", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: none;
+    padding: 25px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative; 
+}
+
+.accordion-btn::after {
+    content: '+'; /* 기본 상태 */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: normal;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.accordion-btn.open::after {
+    content: '-'; /* 열렸을 때 상태 */
+}
+.accordion-btn:hover::after {
+    transform: translateY(-50%) ; 
+    content: '-'; 
+    color: #78E86E;
+}
+
+.accordion-btn:hover {
+    color: #78E86E;
+
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #EFEFEF;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.content p {
+    width: 80%;
+    padding: 30px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: black;
+    padding: 0 3%;
+    align-items: flex-start;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+
+.footer1 {
+    display: flex;
+}
+
+.footer1 img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    padding-top: 18px;
+}
+
+.instagram:hover {content: url('images/instagram-hover.png'); }
+.tiktok:hover {content: url('images/tiktok-hover.png'); }
+.youtube:hover {content: url('images/youtube-hover.png'); }
+.facebook:hover {content: url('images/facebook-hover.png'); }
+
+.footer2 {
+    padding: 0.2rem 5rem;
+    font-size: 0.8rem;
+    white-space:nowrap;
+    line-height : 0.5em;
+    box-sizing: border-box;
+}
+
+.support {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.support a {
+    font-size: 0.8rem;
+    text-decoration: underline; 
+    color: black;
+}
+
+.support a:hover {
+    color: #78E86E;
+}
+
+
+
+.footer3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.footer3 div {
+    margin: 0 5px;
+}
+
+.botanic {
+    width: 78px;
+    height: 40px;
+    background-image: url(images/botanic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.triplej {
+    width: 90px;
+    height: 50px;
+    background-image: url(images/triplej.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.fuzzy {
+    width: 50px;
+    height: 25px;
+    background-image: url(images/fuzzy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+@media (max-width: 1325px) and (min-width: 1024px) {
+
+
+    .section1 h1 {
+        font-size: 30px;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px 90px 30px;
+
+    }
+
+    .left {
+        height: 70vh;;
+        width: 100%;
+    }
+
+    .map {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+  .map-bar, .map-food, .map-sobar, .map-charge, .map-every, .map-recycle, .map-misting, .map-toilet, .map-fast, .map-water, .map-vip, .map-accessible, .map-party, .map-medical, .map-ticket, .map-gs {
+      position: absolute; 
+      width: 100%;
+      height: 100%;
+      z-index: 1; 
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 0 0 4vh;
+    box-sizing: border-box;
+}
+
+.section3 {
+    width: 90%;
+}
+
+
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    header nav  {
+        display: none; /* 가장 작은 화면에서는 헤더가 사라짐 */
+    }
+
+
+    .logo {
+        display: none;        
+    }
+
+    .ticketbutton{
+        display: none; /* 가장 작은 화면에서는 헤더가 사라짐 */
+    }
+    .mobile-icon {
+        display: block; /* 아이콘 표시 */
+    }
+
+    .section1 h1 {
+        font-size: 30px;
+    }
+
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px 90px 30px;
+
+    }
+
+    .left {
+        height: 70vh;;
+        width: 100%;
+    }
+
+    .map {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 90%;
+        justify-content: center;
+    }
+
+  .map-bar, .map-food, .map-sobar, .map-charge, .map-every, .map-recycle, .map-misting, .map-toilet, .map-fast, .map-water, .map-vip, .map-accessible, .map-party, .map-medical, .map-ticket, .map-gs {
+      position: absolute; 
+      width: 100%;
+      height: 90%;
+      z-index: 1; 
+  }
+
+  .right {
+    display: flex
+;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 0 0 4vh;
+    box-sizing: border-box;
+}
+
+.section3 {
+    width: 90%;
+}
+}
+
+
+
+/* 네 번째 단계: 화면 크기가 576px 이하일 때 (모바일 화면) */
+@media (max-width: 768px) {
+
+    header nav  {
+        display: none; /* 가장 작은 화면에서는 헤더가 사라짐 */
+    }
+
+
+    .logo {
+        display: none;        
+    }
+
+    .ticketbutton{
+        display: none; /* 가장 작은 화면에서는 헤더가 사라짐 */
+    }
+    .mobile-icon {
+        display: block; /* 아이콘 표시 */
+    }
+
+    .section1 h1 {
+        font-size: 30px;
+    }
+
+
+
+
+    footer {
+        padding: 2% 0; /* 상하 여백 */
+        border-top: dotted 2px black;
+        width: 92%; /* 좌우 여백 각각 3% */
+        margin: 20% auto 0; /* 중앙 정렬 */
+        box-sizing: border-box; /* padding과 border를 포함한 크기 계산 */
+    }
+
+
+ 
+
+    .footer1 {
+        display: none; 
+    }
+
+    .footer2 {
+        padding: 0;
+        font-size: 2vw;
+        margin-bottom: 30px; /* 아래에 여백 추가 */
+        width: 100%; /* 100% 너비로 설정 */
+    }
+
+    .support a {
+        font-size: 2vw;
+        text-decoration: underline; 
+        color: black;
+    }
+
+    .footer3 {
+        display: flex;
+        flex-direction: row; /* 수직 정렬 */
+        width: 30%; /* 100% 너비로 설정 */
+    }
+    .botanic {
+        width: 70px;
+    }
+    .fuzzy {
+        width: 60px;
+        height: 35px;
+    }
+
+
+    .section3 {
+        width: 90%;
+    }
+
+    .accordion-btn {
+        padding: 15px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left {
+        width: 100%;
+    }
+
+
+    .map {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 90%;
+        justify-content: center;
+    }
+
+
+  .map-bar, .map-food, .map-sobar, .map-charge, .map-every, .map-recycle, .map-misting, .map-toilet, .map-fast, .map-water, .map-vip, .map-accessible, .map-party, .map-medical, .map-ticket, .map-gs {
+      position: absolute; 
+      width: 100%;
+      height: 90%;
+      z-index: 1; 
+  }
+
+
+
+  .icon {
+    gap: 20px;
+  }
+
+  .bar-img, .food-img, .sobar-img, .toilet-img, .water-img, .charge-img, 
+  .misting-img, .every-img, .recycle-img, .accessible-img, .fast-img, .vip-img, .medical-img, .party-img, .ticket-img, .gs-img {
+      width: 35px;            /* 아이콘 너비 */
+      height: 35px;           /* 아이콘 높이 */
+  }
+
+  .right {
+    padding: 1px 0 0 0px;
+
+}
+
+
+.right p {
+  margin-top: 3px;  /* 이미지와 텍스트 간 간격 조정 */
+  font-size: 6px;   /* 텍스트 크기 설정 */
+  color: black;      /* 텍스트 색상 설정 */
+}
+
+.left {
+    height: 80%
+}
+  
+}
+
+
+

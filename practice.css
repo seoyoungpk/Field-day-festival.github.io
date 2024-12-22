@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: #f9f9f9;
+    font-family: "Loos Normal", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    font-size: 16px; 
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 13vh;
+    background-color: #f9f9f9;
+	z-index: 10;   
+}
+
+.logo {
+    position: absolute;
+    top: 12vh;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 18pt; 
+    font-weight: bold;
+    }
+
+
+    h1 {
+        font-size: 4vw;
+        white-space: nowrap;
+        margin: 0; /* 여백 제거 */
+    }
+    
+    
+    h2 {
+        font-size: 2vw;
+        margin: 0; /* 여백 제거 */
+        white-space: nowrap;
+    }    
+
+    nav {
+        position: relative;
+        top: 6vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        list-style: none;
+        margin: 0 30px;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+    
+    .ticketbutton {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        padding: 12px 24px;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        transition: background-color 0.6s;
+    }
+    
+    nav ul li a:hover {
+        color: #78E86E;
+    }
+    
+    .ticketbutton:hover {
+        background-color: #78E86E;
+    }
+
+main {
+    position: relative;
+    height: 90vh; 
+}
+
+
+#animationContainer {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 96%;
+    z-index: -1;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: black;
+    padding: 0 3%;
+    align-items: flex-start;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+
+.footer1 {
+    display: flex;
+}
+
+.footer1 img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    padding-top: 18px;
+}
+
+.instagram:hover {content: url('images/instagram-hover.png'); }
+.tiktok:hover {content: url('images/tiktok-hover.png'); }
+.youtube:hover {content: url('images/youtube-hover.png'); }
+.facebook:hover {content: url('images/facebook-hover.png'); }
+
+.footer2 {
+    padding: 0.2rem 5rem;
+    font-size: 0.8rem;
+    white-space:nowrap;
+    line-height : 0.5em;
+    box-sizing: border-box;
+}
+
+.support {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.support a {
+    font-size: 0.8rem;
+    text-decoration: underline; 
+    color: black;
+}
+
+.support a:hover {
+    color: #78E86E;
+}
+
+
+
+.footer3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.footer3 div {
+    margin: 0 5px;
+}
+
+.botanic {
+    width: 78px;
+    height: 40px;
+    background-image: url(images/botanic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.triplej {
+    width: 90px;
+    height: 50px;
+    background-image: url(images/triplej.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.fuzzy {
+    width: 50px;
+    height: 25px;
+    background-image: url(images/fuzzy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+

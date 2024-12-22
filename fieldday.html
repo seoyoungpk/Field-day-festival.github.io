@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Day Music Festival</title>
+    <link rel="stylesheet" href="fielddaystyles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+</head>
+<body>
+    <div id="mobile-menu">
+        <div class="close-icon" id="close-icon">
+            <img src="images/close.svg" alt="close icon">
+        </div>
+        <ul>
+            <li><a href="/fieldday.html">Home</a></li>
+            <li><a href="/settime.html">Set time</a></li>
+            <li><a href="/direction.html">Direction</a></li>
+            <li><a href="/eventinfo.html">Event Info</a></li>   
+        </ul>
+        <div class="sns">
+            <a href="https://www.instagram.com/fielddaysyd/?hl=en" target="_blank">
+                <img src="images/instagram.png" alt="instagram" class="instagram">
+            </a>
+            <a href="https://www.tiktok.com/@field_day_sydney" target="_blank">
+                <img src="images/tiktok.png" alt="tiktok" class="tiktok">
+            </a>
+            <a href="https://www.youtube.com/@fuzzyevents" target="_blank">
+                <img src="images/youtube.png" alt="youtube" class="youtube">
+            </a>
+            <a href="https://www.facebook.com/FieldDay" target="_blank">
+                <img src="images/facebook.png" alt="facebook" class="facebook">
+            </a> 
+        </div>
+    </div>
+        
+    <header> 
+        <div class="logo">
+            <h1>Field Day <br> Music Festival</h1>
+            <h2>The Domain Sydney <br> Jan 01. 2024.</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/settime.html">Set time</a></li>
+                <li><a href="/direction.html">Direction</a></li>
+                <li><a href="/eventinfo.html">Event Info</a></li>   
+            </ul>
+        </nav>
+        <a href="https://fuzzy.com.au/event/field-day/" class="ticketbutton" target="_blank">Buy ticket</a>
+        <div class="mobile-icon" id="mobile-icon">
+            <img src="images/hamburger.svg" alt="menu icon">
+        </div>
+    </header>
+
+    <main>
+        <div id="animationContainer"></div>
+    </main>
+
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('animationContainer'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'fielddaymotion.json'
+        });
+    </script>
+
+    <script>
+// mobile-menu 요소와 close-icon 요소, 그리고 메뉴를 여는 버튼 선택
+const mobileMenu = document.getElementById('mobile-menu');
+const closeIcon = document.getElementById('close-icon');
+const mobileIcon = document.getElementById('mobile-icon');
+
+// close-icon 클릭 시 mobile-menu 숨기기
+closeIcon.addEventListener('click', function() {
+    mobileMenu.classList.remove('open'); // open 클래스 제거로 메뉴 숨김
+});
+
+// mobileIcon 클릭 시 mobile-menu 열기
+mobileIcon.addEventListener('click', function() {
+    mobileMenu.classList.add('open'); // open 클래스 추가로 메뉴 열기
+});
+    </script>
+    
+
+    <footer>
+        <div class="footer1">
+            <a href="https://www.instagram.com/fielddaysyd/?hl=en" target="_blank">
+                <img src="images/instagram.png" alt="instagram" class="instagram">
+            </a>
+            <a href="https://www.tiktok.com/@field_day_sydney" target="_blank">
+                <img src="images/tiktok.png" alt="tiktok" class="tiktok">
+            </a>
+            <a href="https://www.youtube.com/@fuzzyevents" target="_blank">
+                <img src="images/youtube.png" alt="youtube" class="youtube">
+            </a>
+            <a href="https://www.facebook.com/FieldDay" target="_blank">
+                <img src="images/facebook.png" alt="facebook" class="facebook">
+            </a> 
+        </div>
+        <div class="footer2">
+            <div class="support">
+                <p>SUPPORT</p><a target="_blank" href="mailto:info@fuzzy.com.au"><p>info@fuzzy.com.au</p></a>
+            </div>
+            <div>ⓒ 2024 FIELD DAY MUSIC FESTIVAL. ALL RIGHTS RESERVED.</div>
+        </div>
+
+        <div class="footer3">
+            <div class="botanic"></div>
+            <div class="triplej"></div>
+            <div class="fuzzy"></div>    
+        </div>    
+    </footer>
+
+</body>
+</html>
+
+
+

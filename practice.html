@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <header> 
+        <nav>
+            <div class="logo">
+                <h1>Field Day <br> Music Festival</h1>
+                <h2>The Domain Sydney <br> Jan 01. 2024.</h2>
+            </div>
+            <ul>
+                <li><a href="/settime.html">Set time</a></li>
+                <li><a href="/direction.html">Direction</a></li>
+                <li><a href="/eventinfo.html">Event Info</a></li>   
+            </ul>
+            <a href="https://fuzzy.com.au/event/field-day/" class="ticketbutton" target="_blank">Buy ticket</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="animationContainer"></div>
+
+    </main>
+
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('animationContainer'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'fielddaymotion.json'
+        });
+    </script>
+
+    <footer>
+        <div class="footer1">
+            <a href="https://www.instagram.com/fielddaysyd/?hl=en" target="_blank">
+                <img src="images/instagram.png" alt="instagram" class="instagram">
+            </a>
+            <a href="https://www.tiktok.com/@field_day_sydney" target="_blank">
+                <img src="images/tiktok.png" alt="tiktok" class="tiktok">
+            </a>
+            <a href="https://www.youtube.com/@fuzzyevents" target="_blank">
+                <img src="images/youtube.png" alt="youtube" class="youtube">
+            </a>
+            <a href="https://www.facebook.com/FieldDay" target="_blank">
+                <img src="images/facebook.png" alt="facebook" class="facebook">
+            </a> 
+        </div>
+        <div class="footer2">
+            <div class="support">
+                <p>SUPPORT</p><a target="_blank" href="mailto:info@fuzzy.com.au"><p>info@fuzzy.com.au</p></a>
+            </div>
+            <div>ⓒ 2024 FIELD DAY MUSIC FESTIVAL. ALL RIGHTS RESERVED.</div>
+        </div>
+
+        <div class="footer3">
+            <div class="botanic"></div>
+            <div class="triplej"></div>
+            <div class="fuzzy"></div>    
+        </div>    
+    </footer>
+</body>
+</html>
